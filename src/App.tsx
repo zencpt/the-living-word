@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ChevronDown, Quote } from "lucide-react";
 import { useState, ReactNode } from "react";
+import logo from "./assets/living_word_logo_transparent.png";
 
 const Section = ({ children, className = "" }: { children: ReactNode; className?: string }) => (
   <section className={`py-32 px-6 md:px-12 lg:px-24 max-w-4xl mx-auto ${className}`}>
@@ -62,7 +63,7 @@ export default function App() {
         <div className="w-full max-w-[400px] px-6 flex flex-col items-center">
           <div className="w-full min-h-[150px] flex items-center justify-center">
             <img 
-              src="https://storage.googleapis.com/m-infra.appspot.com/v/a/0/8/08f7f2b3-574f-463d-82b4-539266184852.png" 
+              src={logo} 
               alt="The Living Word Logo" 
               className="w-full h-auto block mx-auto"
               referrerPolicy="no-referrer"
